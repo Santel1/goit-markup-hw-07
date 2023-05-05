@@ -962,7 +962,8 @@ ul {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    padding-left: 0;
+    gap: 0px 0px;
+    padding-left: 16px;
   }
 }
 
@@ -991,13 +992,11 @@ ul {
   flex-direction: column;
   align-items: center;
   margin-bottom: 72px;
-  /* margin-right: 120px; */
 }
 
 @media only screen and (min-width: 767px) {
   .footer-logo-container {
     display: block;
-    /* margin-right: 24px; */
     margin-bottom: 0;
   }
 }
@@ -1031,7 +1030,6 @@ ul {
     display: block;
     flex-direction: row;
     align-items: flex-start;
-    margin-bottom: 0;
   }
 }
 
@@ -1121,6 +1119,7 @@ ul {
   padding: 8px 0px 8px 16px;
   width: 398px;
   outline: none;
+  line-height: 1.38;
   color: var(--white-background-color);
   margin-bottom: 16px;
 }
@@ -1195,7 +1194,7 @@ ul {
   .subscribe-wrapper {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     gap: 24px;
   }
 }
@@ -1392,8 +1391,6 @@ ul {
 
 .mobile-menu .link {
   display: block;
-
-  color: var(--dark-background-color);
   text-decoration: none;
 }
 
@@ -1402,6 +1399,10 @@ ul {
 }
 
 /* Styles mobile menu */
+
+.mobile-menu-nav {
+  color: var(--dark-background-color);
+}
 
 .hamburger-btn {
   stroke: var(--dark-background-color);
@@ -1444,6 +1445,7 @@ ul {
 }
 
 .link-mobile[href="tel:+110001111111"] {
+  color: var(--btn-active-color);
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1480,4 +1482,8 @@ ul {
 
 .close-btn-mobile:focus {
   background-color: var(--btn-active-color);
+}
+
+.mobile-main-page {
+  color: var(--btn-active-color);
 }
