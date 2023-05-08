@@ -902,7 +902,7 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
   row-gap: 72px;
-  /* column-gap: 16px; */
+  column-gap: 16px;
 
   /* display: flex;
   gap: 24px; */
@@ -945,7 +945,14 @@ ul {
 }
 
 .customers-link {
-  width: 168px;
+}
+
+@media only screen and (min-width: 767px) {
+  .customers-link {
+    width: 168px;
+  }
+   {
+  }
 }
 
 .customers-icon {
